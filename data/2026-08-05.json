@@ -1,38 +1,162 @@
 {
   "date": "2026-08-05",
-  "generated_at": "2026-08-05T00:05:30Z",
-  "total_repos": 245321,
+  "generated_at": "2026-08-05T11:35:28Z",
+  "total_repos": 24799,
   "languages": [
-    { "rank": 1, "name": "Python", "count": 42100 },
-    { "rank": 2, "name": "JavaScript", "count": 39800 },
-    { "rank": 3, "name": "TypeScript", "count": 31200 },
-    { "rank": 4, "name": "Java", "count": 18500 },
-    { "rank": 5, "name": "Go", "count": 16200 },
-    { "rank": 6, "name": "Rust", "count": 15300 },
-    { "rank": 7, "name": "C++", "count": 12400 },
-    { "rank": 8, "name": "C", "count": 10800 },
-    { "rank": 9, "name": "C#", "count": 10500 },
-    { "rank": 10, "name": "PHP", "count": 8200 },
-    { "rank": 11, "name": "Ruby", "count": 7100 },
-    { "rank": 12, "name": "Swift", "count": 6500 },
-    { "rank": 13, "name": "Kotlin", "count": 6200 },
-    { "rank": 14, "name": "Dart", "count": 4800 },
-    { "rank": 15, "name": "Shell", "count": 4200 },
-    { "rank": 16, "name": "HTML", "count": 3800 },
-    { "rank": 17, "name": "CSS", "count": 2900 },
-    { "rank": 18, "name": "Scala", "count": 2400 },
-    { "rank": 19, "name": "Lua", "count": 2100 },
-    { "rank": 20, "name": "Elixir", "count": 1900 },
-    { "rank": 21, "name": "Clojure", "count": 1200 },
-    { "rank": 22, "name": "Haskell", "count": 1100 },
-    { "rank": 23, "name": "R", "count": 1050 },
-    { "rank": 24, "name": "Julia", "count": 980 },
-    { "rank": 25, "name": "Zig", "count": 850 },
-    { "rank": 26, "name": "OCaml", "count": 620 },
-    { "rank": 27, "name": "Groovy", "count": 450 },
-    { "rank": 28, "name": "Objective-C", "count": 380 },
-    { "rank": 29, "name": "Perl", "count": 310 },
-    { "rank": 30, "name": "PowerShell", "count": 280 },
-    { "rank": 31, "name": "MATLAB", "count": 260 }
+    {
+      "name": "Python",
+      "count": 8517,
+      "rank": 1
+    },
+    {
+      "name": "TypeScript",
+      "count": 5193,
+      "rank": 2
+    },
+    {
+      "name": "JavaScript",
+      "count": 2045,
+      "rank": 3
+    },
+    {
+      "name": "Rust",
+      "count": 1663,
+      "rank": 4
+    },
+    {
+      "name": "Go",
+      "count": 1343,
+      "rank": 5
+    },
+    {
+      "name": "HTML",
+      "count": 1124,
+      "rank": 6
+    },
+    {
+      "name": "Shell",
+      "count": 876,
+      "rank": 7
+    },
+    {
+      "name": "C++",
+      "count": 754,
+      "rank": 8
+    },
+    {
+      "name": "Swift",
+      "count": 648,
+      "rank": 9
+    },
+    {
+      "name": "C",
+      "count": 582,
+      "rank": 10
+    },
+    {
+      "name": "Kotlin",
+      "count": 506,
+      "rank": 11
+    },
+    {
+      "name": "C#",
+      "count": 363,
+      "rank": 12
+    },
+    {
+      "name": "Java",
+      "count": 345,
+      "rank": 13
+    },
+    {
+      "name": "Dart",
+      "count": 179,
+      "rank": 14
+    },
+    {
+      "name": "PHP",
+      "count": 132,
+      "rank": 15
+    },
+    {
+      "name": "PowerShell",
+      "count": 109,
+      "rank": 16
+    },
+    {
+      "name": "Lua",
+      "count": 102,
+      "rank": 17
+    },
+    {
+      "name": "CSS",
+      "count": 94,
+      "rank": 18
+    },
+    {
+      "name": "Zig",
+      "count": 67,
+      "rank": 19
+    },
+    {
+      "name": "Ruby",
+      "count": 51,
+      "rank": 20
+    },
+    {
+      "name": "Elixir",
+      "count": 33,
+      "rank": 21
+    },
+    {
+      "name": "Objective-C",
+      "count": 25,
+      "rank": 22
+    },
+    {
+      "name": "R",
+      "count": 11,
+      "rank": 23
+    },
+    {
+      "name": "Clojure",
+      "count": 10,
+      "rank": 24
+    },
+    {
+      "name": "MATLAB",
+      "count": 7,
+      "rank": 25
+    },
+    {
+      "name": "Haskell",
+      "count": 4,
+      "rank": 26
+    },
+    {
+      "name": "Julia",
+      "count": 4,
+      "rank": 27
+    },
+    {
+      "name": "OCaml",
+      "count": 4,
+      "rank": 28
+    },
+    {
+      "name": "Perl",
+      "count": 4,
+      "rank": 29
+    },
+    {
+      "name": "Scala",
+      "count": 4,
+      "rank": 30
+    },
+    {
+      "name": "Groovy",
+      "count": 0,
+      "rank": 31
+    }
   ]
 }
