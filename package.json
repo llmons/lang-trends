@@ -1,0 +1,17 @@
+{
+  "name": "var-folders-54-34txgm312k7fb3rzkjt1csyr0000gn-t-tmp-p0rpcnqyi2",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.1.6"
+  }
+}
