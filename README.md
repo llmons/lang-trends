@@ -67,11 +67,11 @@ Each daily file (`data/YYYY-MM-DD.json`):
 ```json
 {
   "date": "2026-08-05",
-  "generated_at": "2026-08-05T00:05:30Z",
-  "total_repos": 245321,
+  "generated_at": "2026-08-05T11:35:28Z",
+  "total_repos": 24799,
   "languages": [
-    { "rank": 1, "name": "Python", "count": 42100 },
-    { "rank": 2, "name": "JavaScript", "count": 39800 }
+    { "rank": 1, "name": "Python", "count": 8517 },
+    { "rank": 2, "name": "TypeScript", "count": 5193 }
   ]
 }
 ```
