@@ -1,7 +1,8 @@
 {
-  "name": "var-folders-54-34txgm312k7fb3rzkjt1csyr0000gn-t-tmp-p0rpcnqyi2",
+  "name": "lang-trends",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "description": "Programming language trends — ranked by new GitHub repos with >100 stars",
   "engines": {
     "node": ">=22.12.0"
   },
