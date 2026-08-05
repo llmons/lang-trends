@@ -25,3 +25,8 @@ pnpm-debug.log*
 
 .vscode/
 .claude/
+.venv/
+.ruff_cache/
+.pytest_cache/
+
+__pycache__/
