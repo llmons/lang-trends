@@ -1,0 +1,170 @@
+---
+import type { LanguageRank } from "../lib/data";
+
+export interface Props {
+  languages: LanguageRank[];
+  totalRepos: number;
+  updatedAt: string;
+}
+
+const { languages, totalRepos, updatedAt } = Astro.props;
+
+/** Medal colors for top 3 */
+const MEDAL: Record<number, { bg: string; badge: string; text: string }> = {
+  1: {
+    bg: "bg-amber-50 dark:bg-amber-950/30",
+    badge: "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300",
+    text: "text-amber-600 dark:text-amber-400",
+  },
+  2: {
+    bg: "bg-gray-50 dark:bg-gray-800/30",
+    badge: "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300",
+    text: "text-gray-500 dark:text-gray-400",
+  },
+  3: {
+    bg: "bg-orange-50 dark:bg-orange-950/20",
+    badge: "bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300",
+    text: "text-orange-600 dark:text-orange-400",
+  },
+};
+
+/** Medal emoji for top 3 */
+const MEDAL_EMOJI: Record<number, string> = {
+  1: "🥇",
+  2: "🥈",
+  3: "🥉",
+};
+
+/** Max count for bar width calculation */
+const maxCount = Math.max(...languages.map((l) => l.count));
+
+/** Format a number with commas */
+function fmt(n: number): string {
+  return n.toLocaleString("en-US");
+}
+---
+
+<div class="space-y-6">
+  <!-- Page title + subtitle -->
+  <div class="text-center space-y-2">
+    <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
+      Language Trends
+    </h1>
+    <p class="text-sm text-gray-500 dark:text-gray-400">
+      Languages ranked by new repositories with <span class="font-semibold text-gray-700 dark:text-gray-300">&gt;100 stars</span> on GitHub in the past year
+    </p>
+  </div>
+
+  <!-- Stats summary -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+    <div class="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm dark:border-gray-800 dark:bg-gray-900">
+      <p class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Languages</p>
+      <p class="text-2xl font-extrabold text-gray-900 dark:text-white">{languages.length}</p>
+    </div>
+    <div class="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm dark:border-gray-800 dark:bg-gray-900">
+      <p class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Total Repos</p>
+      <p class="text-2xl font-extrabold text-gray-900 dark:text-white">{fmt(totalRepos)}</p>
+    </div>
+    <div class="col-span-2 sm:col-span-1 rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm dark:border-gray-800 dark:bg-gray-900">
+      <p class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Updated</p>
+      <p class="text-sm font-semibold text-gray-900 dark:text-white mt-0.5">{updatedAt}</p>
+    </div>
+  </div>
+
+  <!-- Ranking list -->
+  <div class="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden dark:border-gray-800 dark:bg-gray-900">
+    <!-- Table header -->
+    <div
+      class="hidden sm:grid grid-cols-[48px_1fr_120px_1fr] gap-4 items-center px-4 py-3 border-b border-gray-100 bg-gray-50/80 dark:border-gray-800 dark:bg-gray-900/80"
+    >
+      <span class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider text-center">#</span>
+      <span class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Language</span>
+      <span class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider text-right"
+        >New Repos</span
+      >
+      <span class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider hidden md:block"
+        >Share</span
+      >
+    </div>
+
+    <!-- Rows -->
+    <ul class="divide-y divide-gray-100 dark:divide-gray-800">
+      {
+        languages.map((lang) => {
+          const medal = MEDAL[lang.rank] ?? null;
+          const emoji = MEDAL_EMOJI[lang.rank];
+          const pct = ((lang.count / maxCount) * 100).toFixed(1);
+          const share = ((lang.count / totalRepos) * 100).toFixed(1);
+
+          return (
+            <li
+              class={`group relative flex sm:grid sm:grid-cols-[48px_1fr_120px_1fr] gap-4 items-center px-4 py-3.5 transition-colors hover:bg-gray-50/60 dark:hover:bg-gray-800/40 ${medal?.bg ?? ""}`}
+            >
+              {/* Rank */}
+              <div class="flex-shrink-0 w-8 sm:w-auto flex justify-center">
+                {emoji ? (
+                  <span class="text-lg" aria-label={`Rank ${lang.rank}`}>{emoji}</span>
+                ) : (
+                  <span class="text-sm font-semibold text-gray-400 dark:text-gray-500 tabular-nums w-6 text-center">
+                    {lang.rank}
+                  </span>
+                )}
+              </div>
+
+              {/* Language name */}
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2">
+                  <span
+                    class={`text-sm font-semibold text-gray-900 dark:text-white truncate ${lang.rank <= 3 ? "sm:text-base" : ""}`}
+                  >
+                    {lang.name}
+                  </span>
+                  {medal && (
+                    <span
+                      class={`hidden sm:inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${medal.badge}`}
+                    >
+                      {lang.rank === 1 ? "Top 1" : lang.rank === 2 ? "Top 2" : "Top 3"}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* Count */}
+              <div class="text-right">
+                <span class="text-sm font-bold text-gray-900 dark:text-white tabular-nums font-mono">
+                  {fmt(lang.count)}
+                </span>
+              </div>
+
+              {/* Share + mini bar */}
+              <div class="hidden md:flex items-center gap-3">
+                <div class="flex-1 h-1.5 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden">
+                  <div
+                    class={`h-full rounded-full transition-all duration-500 ${lang.rank === 1 ? "bg-amber-400" : lang.rank === 2 ? "bg-gray-400 dark:bg-gray-500" : lang.rank === 3 ? "bg-orange-400" : "bg-primary-400 dark:bg-primary-500"}`}
+                    style={`width: ${pct}%`}
+                  ></div>
+                </div>
+                <span class="text-xs text-gray-400 dark:text-gray-500 tabular-nums w-12 text-right">
+                  {share}%
+                </span>
+              </div>
+
+              {/* Hover glow for top 3 */}
+              {lang.rank <= 3 && (
+                <div
+                  class="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none ring-2 ring-inset ring-primary-200/60 dark:ring-primary-800/30"
+                  aria-hidden="true"
+                ></div>
+              )}
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <p class="text-center text-xs text-gray-400 dark:text-gray-500">
+    Data from GitHub Search API · Updated daily · Only original repos (no forks)
+  </p>
+</div>
