@@ -2,8 +2,8 @@ name: Fetch Data
 
 on:
   schedule:
-    # Run daily at 00:05 UTC
-    - cron: "5 0 * * *"
+    # Run daily at 02:30 CST (GMT+8) = 18:30 UTC
+    - cron: "30 18 * * *"
   workflow_dispatch:
 
 permissions:
