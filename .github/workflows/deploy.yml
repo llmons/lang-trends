@@ -3,6 +3,10 @@ name: Deploy
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ["Fetch Data"]
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
