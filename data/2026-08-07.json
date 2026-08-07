@@ -1,71 +1,71 @@
 {
   "date": "2026-08-07",
-  "generated_at": "2026-08-07T02:54:13Z",
-  "total_repos": 24854,
+  "generated_at": "2026-08-07T19:29:46Z",
+  "total_repos": 24955,
   "languages": [
     {
       "name": "Python",
-      "count": 8540,
+      "count": 8579,
       "rank": 1
     },
     {
       "name": "TypeScript",
-      "count": 5200,
+      "count": 5217,
       "rank": 2
     },
     {
       "name": "JavaScript",
-      "count": 2061,
+      "count": 2074,
       "rank": 3
     },
     {
       "name": "Rust",
-      "count": 1663,
+      "count": 1671,
       "rank": 4
     },
     {
       "name": "Go",
-      "count": 1336,
+      "count": 1342,
       "rank": 5
     },
     {
       "name": "HTML",
-      "count": 1130,
+      "count": 1132,
       "rank": 6
     },
     {
       "name": "Shell",
-      "count": 874,
+      "count": 879,
       "rank": 7
     },
     {
       "name": "C++",
-      "count": 760,
+      "count": 758,
       "rank": 8
     },
     {
       "name": "Swift",
-      "count": 652,
+      "count": 654,
       "rank": 9
     },
     {
       "name": "C",
-      "count": 579,
+      "count": 581,
       "rank": 10
     },
     {
       "name": "Kotlin",
-      "count": 507,
+      "count": 509,
       "rank": 11
     },
     {
       "name": "C#",
-      "count": 363,
+      "count": 367,
       "rank": 12
     },
     {
       "name": "Java",
-      "count": 347,
+      "count": 350,
       "rank": 13
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "name": "PHP",
-      "count": 133,
+      "count": 134,
       "rank": 15
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "name": "Lua",
-      "count": 99,
+      "count": 98,
       "rank": 17
     },
     {
