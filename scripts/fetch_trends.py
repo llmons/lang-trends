@@ -224,3 +224,7 @@ def main() -> None:
     cleanup_old_files()
 
     print(f"\nDone — {filepath}")
+
+
+if __name__ == "__main__":
+    main()
