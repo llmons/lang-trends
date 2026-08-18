@@ -1,116 +1,116 @@
 {
-  "date": "2026-08-08",
-  "generated_at": "2026-08-08T19:10:14Z",
-  "total_repos": 24989,
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T19:09:36Z",
+  "total_repos": 25396,
   "languages": [
     {
       "name": "Python",
-      "count": 8582,
+      "count": 8697,
       "rank": 1
     },
     {
       "name": "TypeScript",
-      "count": 5225,
+      "count": 5325,
       "rank": 2
     },
     {
       "name": "JavaScript",
-      "count": 2081,
+      "count": 2117,
       "rank": 3
     },
     {
       "name": "Rust",
-      "count": 1668,
+      "count": 1707,
       "rank": 4
     },
     {
       "name": "Go",
-      "count": 1347,
+      "count": 1378,
       "rank": 5
     },
     {
       "name": "HTML",
-      "count": 1138,
+      "count": 1127,
       "rank": 6
     },
     {
       "name": "Shell",
-      "count": 880,
+      "count": 888,
       "rank": 7
     },
     {
       "name": "C++",
-      "count": 758,
+      "count": 787,
       "rank": 8
     },
     {
       "name": "Swift",
-      "count": 655,
+      "count": 673,
       "rank": 9
     },
     {
       "name": "C",
-      "count": 582,
+      "count": 592,
       "rank": 10
     },
     {
       "name": "Kotlin",
-      "count": 510,
+      "count": 527,
       "rank": 11
     },
     {
       "name": "C#",
-      "count": 371,
+      "count": 386,
       "rank": 12
     },
     {
       "name": "Java",
-      "count": 352,
+      "count": 349,
       "rank": 13
     },
     {
       "name": "Dart",
-      "count": 180,
+      "count": 182,
       "rank": 14
     },
     {
       "name": "PHP",
-      "count": 131,
+      "count": 127,
       "rank": 15
     },
     {
       "name": "PowerShell",
-      "count": 111,
+      "count": 113,
       "rank": 16
     },
     {
-      "name": "CSS",
-      "count": 98,
+      "name": "Lua",
+      "count": 103,
       "rank": 17
     },
     {
-      "name": "Lua",
-      "count": 98,
+      "name": "CSS",
+      "count": 92,
       "rank": 18
     },
     {
       "name": "Zig",
-      "count": 67,
+      "count": 69,
       "rank": 19
     },
     {
       "name": "Ruby",
-      "count": 51,
+      "count": 48,
       "rank": 20
     },
     {
       "name": "Elixir",
-      "count": 32,
+      "count": 36,
       "rank": 21
     },
     {
       "name": "Objective-C",
-      "count": 25,
+      "count": 27,
       "rank": 22
     },
     {
@@ -139,17 +139,17 @@
       "rank": 27
     },
     {
-      "name": "Perl",
+      "name": "Scala",
       "count": 4,
       "rank": 28
     },
     {
-      "name": "Scala",
-      "count": 4,
+      "name": "Julia",
+      "count": 3,
       "rank": 29
     },
     {
-      "name": "Julia",
+      "name": "Perl",
       "count": 3,
       "rank": 30
     },
