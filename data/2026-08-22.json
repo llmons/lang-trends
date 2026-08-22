@@ -1,31 +1,31 @@
 {
-  "date": "2026-08-12",
-  "generated_at": "2026-08-12T19:37:54Z",
-  "total_repos": 25144,
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T18:58:36Z",
+  "total_repos": 25710,
   "languages": [
     {
       "name": "Python",
-      "count": 8653,
+      "count": 8794,
       "rank": 1
     },
     {
       "name": "TypeScript",
-      "count": 5252,
+      "count": 5388,
       "rank": 2
     },
     {
       "name": "JavaScript",
-      "count": 2065,
+      "count": 2167,
       "rank": 3
     },
     {
       "name": "Rust",
-      "count": 1686,
+      "count": 1734,
       "rank": 4
     },
     {
       "name": "Go",
-      "count": 1357,
+      "count": 1392,
       "rank": 5
     },
     {
@@ -35,62 +35,62 @@
     },
     {
       "name": "Shell",
-      "count": 878,
+      "count": 890,
       "rank": 7
     },
     {
       "name": "C++",
-      "count": 771,
+      "count": 791,
       "rank": 8
     },
     {
       "name": "Swift",
-      "count": 662,
+      "count": 686,
       "rank": 9
     },
     {
       "name": "C",
-      "count": 584,
+      "count": 600,
       "rank": 10
     },
     {
       "name": "Kotlin",
-      "count": 522,
+      "count": 536,
       "rank": 11
     },
     {
       "name": "C#",
-      "count": 380,
+      "count": 388,
       "rank": 12
     },
     {
       "name": "Java",
-      "count": 353,
+      "count": 348,
       "rank": 13
     },
     {
       "name": "Dart",
-      "count": 179,
+      "count": 183,
       "rank": 14
     },
     {
       "name": "PHP",
-      "count": 128,
+      "count": 129,
       "rank": 15
     },
     {
       "name": "PowerShell",
-      "count": 112,
+      "count": 117,
       "rank": 16
     },
     {
       "name": "Lua",
-      "count": 101,
+      "count": 106,
       "rank": 17
     },
     {
       "name": "CSS",
-      "count": 96,
+      "count": 93,
       "rank": 18
     },
     {
@@ -100,12 +100,12 @@
     },
     {
       "name": "Ruby",
-      "count": 51,
+      "count": 49,
       "rank": 20
     },
     {
       "name": "Elixir",
-      "count": 33,
+      "count": 35,
       "rank": 21
     },
     {
@@ -125,12 +125,12 @@
     },
     {
       "name": "MATLAB",
-      "count": 6,
+      "count": 8,
       "rank": 25
     },
     {
       "name": "Haskell",
-      "count": 4,
+      "count": 5,
       "rank": 26
     },
     {
